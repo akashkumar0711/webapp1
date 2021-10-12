@@ -11,7 +11,7 @@ pipeline {
         stage('push repo to remote host') {
             steps {
                 echo 'connect to remote host and pull down the latest version'
-                sh 'ssh -i ~/ak-key-pair.pem ubuntu@ 34.234.53.208sudo git -C /var/www/html pull'
+                sh 'ssh -i ~/ak-key-pair.pem ubuntu@34.234.53.208 sudo git -C /var/www/html pull'
             }
         }
         stage('Check website is up') {
