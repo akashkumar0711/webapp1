@@ -10,7 +10,7 @@ pipeline {
         stage('copy to html folder') {
             steps {
                 echo 'copy to html folder'
-                sh 'cp /var/lib/jenkins/workspace/webapp/webapp1/* /var/www/html/'
+                sh 'cp /var/lib/jenkins/workspace/webapp/webapp1/* /var/www/html'
             }
         }
         
